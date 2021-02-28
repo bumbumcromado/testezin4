@@ -1,17 +1,71 @@
 <html>
     <head>
-        <title>Druiddd teste</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="utf-8">
         <link rel="stylesheet" href="reset.css">
-        <link rel="stylesheet" href="style.css">
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+        <style>
+            h1{
+             font-size: 2.2em;
+             margin-top: 0.5em;
+            }
+            article{
+                font-size: 1.5em;
+				text-align: justify;
+				font-family: 'Lato', sans-serif;
+            }
+            .texto{
+                margin-top: 1em;
+            }
+            .container{
+                position: relative;
+            }
+            .next{
+                height: 100%;
+                width: 50%;
+                float: right;
+            }
+            .prev{
+                height: 100%;
+                width: 50%;
+                float: left;
+            }
+            .bloco{
+                width: 75%;
+                height: 80%;
+                position: absolute;
+                left: 10%;  
+                margin: 0 auto;
+                z-index: 1;
+            }
+            .pagina{
+                position: fixed;
+                bottom: 0.5em;
+            }
+            .display_none{
+                display: none;
+            }
+        </style>
     </head>
     <body>
-        <div class="corpo">
-            <h1>Hora de fazer uma escolha!</h1>
-            <p>Para prosseguir na história você deve tomar uma decisão, toque em uma das opções abaixo:</p>
-            <a href="opcao1.html"><div class="button">Opção 1</div></a>
-            <a href="opcao2.html"><div class="button">Opção 2</div></a>
-        </div>
+        <section class='container'>
+            <div class='next'></div>
+            <main class='bloco'>
+                    <article>
+                    <h1>Título do capítulo</h1>
+                    <p class="texto">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sed neque lobortis, porta velit ac, consequat lacus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Maecenas pellentesque faucibus ultrices. Vestibulum posuere tristique hendrerit. Nulla rhoncus, eros nec ultrices faucibus, metus est consectetur libero, at euismod odio elit a enim. Ut pharetra est et dui ornare, in hendrerit felis cursus. Etiam fermentum egestas tincidunt. Etiam ac sagittis libero, sed sollicitudin tortor. Duis nisl urna, suscipit non ligula nec, iaculis vehicula leo. Nam pharetra eu metus eu aliquam. Vestibulum fermentum efficitur tortor vitae dictum. Nulla eu consectetur felis, non volutpat dui. Etiam lacinia gravida urna in maximus.
+
+                        Pellentesque auctor, arcu sit amet semper semper, nulla metus euismod neque, quis placerat diam lorem sit amet lorem. Nunc ultricies hendrerit erat vitae cursus. Aenean a tempor dolor, eget dignissim leo. Maecenas malesuada porta lacus vel ullamcorper. In quis libero ut massa semper commodo et vel turpis. Nulla hendrerit turpis laoreet tempor euismod. Vestibulum condimentum massa eu rutrum molestie. Aenean egestas sollicitudin ultrices. Donec faucibus nulla dolor, et posuere mauris ullamcorper sed. Duis eget sollicitudin metus, ac efficitur justo. Pellentesque vehicula tempus molestie.
+                
+                        Pellentesque interdum blandit ligula, rutrum sodales nulla aliquam ut. Phasellus sollicitudin quam vitae erat vulputate fermentum. Praesent ac eros quis urna lacinia eleifend a ac massa. Curabitur tempus id neque et convallis. Phasellus viverra massa ut est iaculis venenatis. Pellentesque at tempus elit. Donec sit amet justo quam. Pellentesque vel tellus et orci tincidunt ultrices a id orci. Nam accumsan commodo lacus, eu dapibus nulla. Aliquam maximus scelerisque tortor ac rutrum. Nulla aliquam hendrerit dui vitae faucibus.
+                    </p>
+                    <p class="pagina">página 1</p>
+                </article>
+            </main>
+            <div class='prev'></div>
+        </section>
     </body>
+    <script src="conteudo.js"></script>
+    <script src="build.js"></script>
 </html>
